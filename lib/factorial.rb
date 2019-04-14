@@ -2,5 +2,14 @@
 # Time complexity: ?
 # Space complexity: ?
 def factorial(number)
-  raise NotImplementedError
+  if number
+    factorial = 1
+    while number > 0
+      factorial *= number
+      number -= 1
+    end
+    return factorial
+  else
+    raise ArgumentError, "Input must be an integer"
+  end
 end
