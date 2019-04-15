@@ -1,6 +1,6 @@
 # Computes factorial of the input number and returns it
-# Time complexity: ?
-# Space complexity: ?
+# Time complexity: O(n) because number of iterations is dependent on the size of the input number
+# Space complexity: O(1) because only one int value (factorial) is ever stored
 def factorial(number)
   if number
     factorial = 1
